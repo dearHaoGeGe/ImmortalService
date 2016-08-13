@@ -16,8 +16,13 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".service.LocalService"/>
-        <service android:name=".service.RemoteService" android:process=":remoteService"/>
+        <service android:name=".service.LocalService" />
+        <service
+            android:name=".service.RemoteService"
+            android:process=":remoteService" />
+        <service
+            android:name=".service.JobHandleServer"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
     </application>
 
 </manifest>
