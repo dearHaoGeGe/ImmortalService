@@ -17,6 +17,7 @@
         </activity>
 
         <service android:name=".service.LocalService" />
+        <!-- 远程服务要开在另一个进程里面 -->
         <service
             android:name=".service.RemoteService"
             android:process=":remoteService" />
